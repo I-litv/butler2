@@ -186,6 +186,8 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav ul li.has-dropdown .dropdown li {
   display: block;
   margin-bottom: 7px;
+  padding: 2px;
+    margin: 2px;
 }
 .fh5co-nav ul li.has-dropdown .dropdown li:last-child {
   margin-bottom: 0;
@@ -200,6 +202,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav ul li.has-dropdown .dropdown li a:hover {
   color: #000;
+  background-color: #6676e6;
 }
 .fh5co-nav ul li.has-dropdown:hover a, .fh5co-nav ul li.has-dropdown:focus a {
   color: #fff;
