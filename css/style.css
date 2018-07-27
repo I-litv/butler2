@@ -45,13 +45,13 @@ body {
 }
 
 a {
-  color: #F73859;
+  color: blue;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #F73859;
+  color: blue;
   outline: none;
   text-decoration: none;
 }
@@ -657,7 +657,7 @@ h1, h2, h3, h4, h5, h6, figure {
   border-color: #fff transparent;
 }
 #fh5co-testimonial .testimonial.fh5co-selected {
-  background: #F73859;
+  background: blue;
   bottom: 10px;
   -webkit-box-shadow: 0px 18px 71px -10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 18px 71px -10px rgba(0, 0, 0, 0.75);
@@ -670,7 +670,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: rgba(255, 255, 255, 0.7);
 }
 #fh5co-testimonial .testimonial.fh5co-selected:after {
-  border-color: #F73859 transparent;
+  border-color: blue transparent;
 }
 @media screen and (max-width: 768px) {
   #fh5co-testimonial .testimonial.fh5co-selected {
@@ -697,7 +697,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 20px;
 }
 #fh5co-blog .fh5co-post h3 a {
-  color: #F73859;
+  color: blue;
 }
 #fh5co-blog .fh5co-post h3 a:hover {
   color: #f35f55;
@@ -750,7 +750,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter .counter {
   font-size: 50px;
   margin-bottom: 10px;
-  color: #F73859;
+  color: blue;
   font-weight: 100;
   display: block;
 }
@@ -956,7 +956,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #5d5d5d;
 }
 .feature-center:hover, .feature-center:focus {
-  background: #F73859;
+  background: blue;
   bottom: 10px;
   -webkit-box-shadow: 0px 18px 71px -10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 18px 71px -10px rgba(0, 0, 0, 0.75);
@@ -1512,21 +1512,21 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn-primary {
-  background: #F73859;
+  background: #0006c3;
   color: #fff;
-  border: 2px solid #F73859;
+  border: 2px solid #0006c3;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #f8516d !important;
-  border-color: #f8516d !important;
+  background: #ccc503  !important;
+  border-color: #ccc503  !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #F73859;
-  border: 2px solid #F73859;
+  color: #ccc503;
+  border: 2px solid #ccc503;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #F73859;
+  background: #ccc503;
   color: #fff;
 }
 
