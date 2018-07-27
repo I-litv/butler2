@@ -298,7 +298,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(62, 65, 78, 0.9);
+  background: rgba(45, 47, 56, 0.52);
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -492,6 +492,13 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-cover .display-tc {
   display: table-cell !important;
   vertical-align: middle;
+}
+#fh5co-header .display-tc2,
+#fh5co-counter .display-tc2,
+.fh5co-cover .display-tc2 {
+  display: table-cell !important;
+  vertical-align: middle;
+  text-align: center;
 }
 #fh5co-header .display-tc h1, #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h1,
