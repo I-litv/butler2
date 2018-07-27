@@ -1129,7 +1129,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-heading {
-  margin-bottom: 2em;
+ margin-bottom: 2em;
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+    align-content: center;
 }
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
