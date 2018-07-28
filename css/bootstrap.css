@@ -5398,10 +5398,12 @@ button.close {
 }
 
 .modal-header {
-  padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
-  min-height: 16.42857px;
-  display: flex;
+    padding: 5px 5px 5px 15px;
+    border-bottom: 1px solid #000000;
+    min-height: 16.42857px;
+    display: flex;
+    background-color: #cecaca;
+    border-radius: 20px 20px 0 0;
 }
 
 .modal-header .close {

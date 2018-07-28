@@ -1,7 +1,7 @@
 <?php
 if($_POST)
 {
-$to_Email = "romaz999@mail.ru"; 
+$to_Email = "Butlerdnepr@gmail.com"; 
 $subject = 'Запрос обратного звонка '.$_POST["polz_name"]; 
 
 if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
@@ -36,7 +36,7 @@ die($otvet_serv);
 
 $message = "Имя: ".$user_Name.". Телефон: ".$user_Phone;
 
-if(!mail($to_Email, $subject, $message, "From: info@webriz.ru \r\n"))
+if(!mail($to_Email, $subject, $message, "From: info@butler.dp.ua \r\n"))
 {
 $otvet_serv = json_encode(array('text' => 'Не могу отправить почту! Пожалуйста, проверьте ваши настройки PHP почты.'));
 die($otvet_serv);

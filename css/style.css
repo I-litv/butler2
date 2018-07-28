@@ -18,7 +18,10 @@ body {
   color: #828282;
   background: #fff;
 }
-
+#glowing{
+      border: none;
+  animation: glowing 1500ms infinite; 
+}
 #page {
   position: relative;
   overflow-x: hidden;
@@ -298,7 +301,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(45, 47, 56, 0.52);
+  background: rgba(4, 4, 4, 0.88);
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -323,11 +326,11 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .fh5co-cover.fh5co-cover-sm {
-  height: 600px;
+  height: 400px;
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover.fh5co-cover-sm {
-    height: 400px;
+    height: 300px;
   }
 }
 .fh5co-cover.fh5co-cover-sm .display-t,
@@ -339,7 +342,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .fh5co-cover.fh5co-cover-sm .display-t,
   .fh5co-cover.fh5co-cover-sm .display-tc {
-    height: 400px;
+    height: 300px;
   }
 }
 
@@ -1708,6 +1711,18 @@ h1, h2, h3, h4, h5, h6, figure {
   right: 10px;
   border-top-left-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
+}
+
+.btn-header{
+  font-size: 12px !important;
+}
+
+@keyframes glowing {
+  0% {  box-shadow: 0 0 4px #e1e9f9; }
+  25% {  box-shadow: 0 0 8px #e1e9f9; }
+  50% {  box-shadow: 0 0 12px #cddefb; }
+  75% {  box-shadow: 0 0 8px #cddefb; }
+  100% {  box-shadow: 0 0 4px #e1e9f9; }
 }
 
 /*# sourceMappingURL=style.css.map */

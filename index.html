@@ -84,7 +84,7 @@
                             <div class="display-tc animate-box" data-animate-effect="fadeInUp">
                                 <h1 class="mb30">Butler - клининговая компания</h1>
                                 <p>
-                                    <a href="#" target="_blank" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Звонок</a>
+                                    <a href="#" target="_blank" class="btn btn-primary " data-toggle="modal" data-target="#exampleModal" id="glowing">Звонок</a>
                                     <!--<em class="or">or</em>
                                     <a href="https://vimeo.com/channels/staffpicks/93951774" class="link-watch popup-vimeo">Watch Video</a> -->
                                 </p>
@@ -460,14 +460,14 @@
     <!-- Main -->
     <script src="js/main.js"></script>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
+      <!--<div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Заказать звонок</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
+      </div> -->
       <div class="modal-body">
        <form>
   <div class="form-group">
@@ -478,8 +478,7 @@
     <label for="formGroupExampleInput2">Телефон</label>
    <input type="text" name="tel" placeholder="Телефон" required>
   </div>
-</form
-      </div>
+</form>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
         <button type="submit" class="btn btn-primary" id="submit">Заказать</button>

@@ -1,7 +1,7 @@
 <?php
 
 $fname = $_POST['fname'];
-$lname = &_POST['lname'];
+$lname = $_POST['lname'];
 $email = $_POST['email'];
 $subject= $_POST['subject'];
 $message=$_POST['message'];
@@ -24,7 +24,7 @@ $email = trim($email);
 $subject=trim($subject);
 $message=trim($message);
 
-mail("info@butler.dp.ua", "Заявка с сайта", "ФИО:".$fname.". E-mail: ".$email ,"From: info@butler.dp.ua \r\n");
+mail("dovid1989@gmail.com", "Заявка с сайта", "ФИО:".$fname.". E-mail: ".$email ,"From: info@svarog.dp.ua \r\n");
 
 ini_set('display_errors','On');
 error_reporting('E_ALL');
