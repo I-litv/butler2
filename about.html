@@ -109,13 +109,28 @@
 		<div class="container">
 			<div class="row animate-box row-pb-md">
 				<div class="col-md-8 col-md-offset-2 text-left fh5co-heading">
-					<span>Productive Staff</span>
-					<h2>Meet Our Staff</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<span>О BUTLER</span>
+					<h2>Немного о нас:</h2>
+					<p><b>Butler</b> - создает для клиента условия, позволяющие не задумываться о бытовых проблемах.<br>
+«Дворецкий» является неотъемлемой частью любой недвижимости, будь-то особняк, офис или производство.<br>
+Профессия BUTLER или house manager присутсвует в нашей жизни очень давно под именами:<br>
+- завхоз<br>
+-Техничиский администратор<br>
+- начальник хозяйственного отдела
+и другие похожие проффессии.<br>
+
+Компания Butler создана для потдержания и культуры правильго содержания недвижимости в комфортном
+для клиета состоянии.</p>
+				</div>
+			</div>
+			<!--<div class="row animate-box row-pb-md">
+				<div class="col-md-8 col-md-offset-2 fhco-heading">
+					<h2>Наши достижения</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
+
 					<div class="fh5co-staff">
 						<img src="images/person1.jpg" alt="Free HTML5 Templates by gettemplates.co">
 						<h3>Jean Smith</h3>
@@ -159,7 +174,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div id="fh5co-testimonial" class="fh5co-bg-section">
 		<div class="container">
@@ -285,7 +300,56 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	
+	 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <!--<div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Заказать звонок</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> -->
+      <div class="modal-body">
+       <form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Имя</label>
+    <input type="text" name="fio" placeholder="Имя" required>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Телефон</label>
+   <input type="text" name="tel" placeholder="Телефон" required>
+  </div>
+</form>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        <button type="submit" class="btn btn-primary" id="submit">Заказать</button>
+      </div>
+      <div id="form_result"></div>
+    </div>
+  </div>
+  <script>
+$("#submit").click(function() { 
+var name = $('input[name=fio]').val(); 
+var tel = $('input[name=tel]').val();
+var otpravka = true;
+if(name==""){ 
+otpravka = false;
+}
+if(tel==""){ 
+otpravka = false;
+}
+if(otpravka) 
+{
+
+dannie = {'polz_name':name, 'polz_tel':tel};
+$.post('call.php', dannie, function(otvet){ 
+rezultat = '<div style="color:#D80018;">'+otvet.text+'</div>';
+$("#form_result").hide().html(rezultat).slideDown();
+}, 'json'); 
+}
+});
+</script>
+</div>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -303,7 +367,7 @@
 	<script src="js/jquery.stellar.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	</body>
 </html>
 
