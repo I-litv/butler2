@@ -255,17 +255,46 @@
 		</div>
 		<div class="md-modal md-effect-18" id="modal-18">
 			<div class="md-content">
-				<h3>Modal Dialog</h3>
-				<div>
-					<p>This is a modal window. You can do the following things with it:</p>
-					<ul>
-						<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-						<li><strong>Close:</strong> click on the button below to close the modal.</li>
-					</ul>
-					<button class="md-close">Close me!</button>
-				</div>
+				<div class="modal-body">
+       <form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Имя</label>
+    <input type="text" name="fio" placeholder="Имя" required>
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Телефон</label>
+   <input type="text" name="tel" placeholder="Телефон" required>
+  </div>
+</form>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary md-close" data-dismiss="modal">Закрыть</button>
+        <button type="submit" class="btn btn-primary" id="submit">Заказать</button>
+      </div>
+      <div id="form_result"></div>
+    </div>
 			</div>
+			<script>
+$("#submit").click(function() { 
+var name = $('input[name=fio]').val(); 
+var tel = $('input[name=tel]').val();
+var otpravka = true;
+if(name==""){ 
+otpravka = false;
+}
+if(tel==""){ 
+otpravka = false;
+}
+if(otpravka) 
+{
+
+dannie = {'polz_name':name, 'polz_tel':tel};
+$.post('call.php', dannie, function(otvet){ 
+rezultat = '<div style="color:#D80018;">'+otvet.text+'</div>';
+$("#form_result").hide().html(rezultat).slideDown();
+}, 'json'); 
+}
+});
+</script>
 		</div>
 		<div class="md-modal md-effect-19" id="modal-19">
 			<div class="md-content">
