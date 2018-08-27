@@ -218,6 +218,50 @@
     <script src="js/jquery.stellar.min.js"></script>
     <!-- Main -->
     <script src="js/main.js"></script>
+    <!-- modal for sending Form-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Имя</label>
+                        <input type="text" name="fio" placeholder="Имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Телефон</label>
+                        <input type="text" name="tel" placeholder="Телефон" required>
+                    </div>
+                </form>
+             </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                        <button type="button" class="btn btn-primary">Заказать</button>
+                    </div>
+                </div>
+            </div>
+            <script>
+        $("#submit").click(function() {
+            var name = $('input[name=fio]').val();
+            var tel = $('input[name=tel]').val();
+            var otpravka = true;
+            if (name == "") {
+                otpravka = false;
+            }
+            if (tel == "") {
+                otpravka = false;
+            }
+            if (otpravka) {
+
+                dannie = { 'polz_name': name, 'polz_tel': tel };
+                $.post('call.php', dannie, function(otvet) {
+                    rezultat = '<div style="color:#D80018;">' + otvet.text + '</div>';
+                    $("#form_result").hide().html(rezultat).slideDown();
+                }, 'json');
+            }
+        });
+        </script>
+        </div>
 </body>
 
 </html>

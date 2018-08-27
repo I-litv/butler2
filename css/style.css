@@ -72,17 +72,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #F73859;
+  background: #0514c5;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #F73859;
+  background: #0514c5;
 }
 
 ::selection {
   color: #fff;
-  background: #F73859;
+  background: #0514c5;
 }
 
 .fh5co-nav {
@@ -1730,6 +1730,16 @@ h1, h2, h3, h4, h5, h6, figure {
     padding-right: 1em;
 }
 
+.btn-modal {
+    width: 49.6%;
+    margin: 0 !important;
+    border: none;
+   /* padding: 0px; */
+    border-bottom-right-radius: 19px;
+    border-bottom-left-radius: 19px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
 /* Animation Timers
 ---------------------------------*/
 .delay-02s { 
