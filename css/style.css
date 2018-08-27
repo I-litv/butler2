@@ -1741,6 +1741,11 @@ h1, h2, h3, h4, h5, h6, figure {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
 }
+@media screen and (max-width: 768px) {
+  .btn-modal {
+    width: 48%;
+  }
+}
 /* Animation Timers
 ---------------------------------*/
 .delay-02s { 
