@@ -173,6 +173,7 @@ input {
   border-color: #a1af2c;
   background-color: #bbb;
   color: #000000;
+  border-radius: 19px;
 }
 
 input[type="checkbox"],
@@ -2169,7 +2170,8 @@ input[type="search"] {
   }
 }
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .radio,
@@ -5464,7 +5466,7 @@ button.close {
 
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 600px;
+    width: 400px;
     margin: 20% auto;
   }
 
