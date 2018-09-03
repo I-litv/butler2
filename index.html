@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-
 <html>
 
 <head>
@@ -33,7 +32,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Modernizr JS -->
+    <link href="css/nanogallery2.min.css" rel="stylesheet" type="text/css" <!-- Modernizr JS -->
     <script src="js/modernizr.custom.js"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
@@ -114,7 +113,7 @@
                             <i class="icon-sun"></i>
                         </span>
                             <h3>ЭКО</h3>
-                            <p>Сегодня клининговая компания «BUTLER» предлагает профессиональную экологичную уборку квартир в Днепре  ...</p>
+                            <p>Сегодня клининговая компания «BUTLER» предлагает профессиональную экологичную уборку квартир в Днепре ...</p>
                             <p><a href="eco.html">Детально...</a></p>
                         </div>
                     </div>
@@ -169,37 +168,35 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                        <a href="#"><img src="images/work-1.jpg" alt="Free HTML5 Website Template by gettemplates.co" class="img-responsive">
-                        <div class="fh5co-copy">
-                            <h3>Clipboard Office</h3>
-                            <p>Web Design</p>
-                        </div>
-                    </a>
-                    </div>
-                    <div class="col-md-6 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                        <a href="#"><img src="images/work-2.jpg" alt="Free HTML5 Website Template by gettemplates.co" class="img-responsive">
-                        <div class="fh5co-copy">
-                            <h3>Smart Layers</h3>
-                            <p>Brand &amp; Identity</p>
-                        </div>
-                    </a>
-                    </div>
-                    <div class="col-md-6 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                        <a href="#"><img src="images/work-3.jpg" alt="Free HTML5 Website Template by gettemplates.co" class="img-responsive">
-                        <div class="fh5co-copy">
-                            <h3>Notepad Mockup</h3>
-                            <p>Illustration</p>
-                        </div>
-                    </a>
-                    </div>
-                    <div class="col-md-6 col-sm-6 fh5co-project animate-box" data-animate-effect="fadeIn">
-                        <a href="#"><img src="images/work-3.jpg" alt="Free HTML5 Website Template by gettemplates.co" class="img-responsive">
-                        <div class="fh5co-copy">
-                            <h3>Notepad Mockup</h3>
-                            <p>Illustration</p>
-                        </div>
-                    </a>
+                    <div id="nanogallery2" data-nanogallery2='{
+        "thumbnailHeight": 400, "thumbnailWidth": 400,
+        "thumbnailDisplayTransition":"slideDown2",
+        "thumbnailDisplayTransitionDuration":1000,
+        "thumbnailDisplayInterval":200,
+        "thumbnailHoverEffect2":"image_grayscale_0%_100%_5000|image_scale_1.00_1.20_5000",
+        "galleryDisplayMode": "moreButton",
+        "galleryPaginationMode": "numbers",
+        "itemsBaseURL": "gallery/",
+        "galleryTheme": "light"
+      }'>
+                        <!-- FIRST ALBUM -->
+                        <a href="" data-ngkind="album" data-ngid="1" data-ngthumb="gallery1.jpg">Стандарт</a>
+                        <a href="gallery1.jpg" data-ngid="10" data-ngalbumid="1" data-ngthumb="gallery1.jpg">Image A1</a>
+                        <a href="gallery2.jpg" data-ngid="11" data-ngalbumid="1" data-ngthumb="gallery2.jpg">Image A2</a>
+                        <a href="gallery3.jpg" data-ngid="12" data-ngalbumid="1" data-ngthumb="gallery3.jpg">Image A2</a>
+                        <a href="gallery4.jpg" data-ngid="13" data-ngalbumid="1" data-ngthumb="gallery4.jpg">Image A2</a>
+                        <!-- SECOND ALBUM -->
+                        <a href="" data-ngkind="album" data-ngid="2" data-ngthumb="gallery3.jpg">Эко уборка</a>
+                        <a href="berlin2.jpg" data-ngid="20" data-ngalbumid="2" data-ngthumb="berlin2_t.jpg">Image B1</a>
+                        <a href="berlin2.jpg" data-ngid="21" data-ngalbumid="2" data-ngthumb="berlin2_t.jpg">Image B2</a>
+                        <!-- Third ALBUM -->
+                        <a href="" data-ngkind="album" data-ngid="3" data-ngthumb="gallery6.jpg">Premium уборка</a>
+                        <a href="berlin2.jpg" data-ngid="30" data-ngalbumid="3" data-ngthumb="berlin2_t.jpg">Image B1</a>
+                        <a href="berlin2.jpg" data-ngid="31" data-ngalbumid="3" data-ngthumb="berlin2_t.jpg">Image B2</a>
+                        <!-- FOURTH ALBUM -->
+                        <a href="" data-ngkind="album" data-ngid="4" data-ngthumb="berlin2t">Хард Уборка</a>
+                        <a href="berlin2.jpg" data-ngid="40" data-ngalbumid="4" data-ngthumb="berlin2_t.jpg">Image B1</a>
+                        <a href="berlin2.jpg" data-ngid="41" data-ngalbumid="4" data-ngthumb="berlin2_t.jpg">Image B2</a>
                     </div>
                 </div>
             </div>
@@ -435,28 +432,29 @@
     <!-- Main -->
     <script src="js/main.js"></script>
     <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2@2.2.0/dist/jquery.nanogallery2.min.js"></script>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content glowing">
                 <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput">Имя     </label>
-                        <input type="text" name="fio" placeholder="  Имя" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput2">Телефон</label>
-                        <input type="text" name="tel" placeholder=" +380..." required>
-                    </div>
-                </form>
-             </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary btn-modal" data-dismiss="modal">Закрыть</button>
-                        <button type="button" class="btn btn-primary btn-modal">Заказать</button>
-                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Имя </label>
+                            <input type="text" name="fio" placeholder="  Имя" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Телефон</label>
+                            <input type="text" name="tel" placeholder=" +380..." required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-modal" data-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary btn-modal">Заказать</button>
                 </div>
             </div>
-            <script>
+        </div>
+        <script>
         $("#submit").click(function() {
             var name = $('input[name=fio]').val();
             var tel = $('input[name=tel]').val();
@@ -477,7 +475,7 @@
             }
         });
         </script>
-        </div>
+    </div>
 </body>
 
 </html>
