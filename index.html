@@ -32,8 +32,8 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css">
-    <link href="css/nanogallery2.min.css" rel="stylesheet" type="text/css" <!-- Modernizr JS -->
-    <script src="js/modernizr.custom.js"></script>
+    <link href="css/nanogallery2.min.css" rel="stylesheet" type="text/css"> <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
@@ -450,7 +450,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary btn-modal" data-dismiss="modal">Закрыть</button>
-                    <button type="button" class="btn btn-primary btn-modal">Заказать</button>
+                    <button type="button" class="btn btn-primary btn-modal" id="submit">Заказать</button>
+                    <div id="form_result"></div>
                 </div>
             </div>
         </div>
@@ -469,11 +470,14 @@
 
                 dannie = { 'polz_name': name, 'polz_tel': tel };
                 $.post('call.php', dannie, function(otvet) {
-                    rezultat = '<div style="color:#D80018;">' + otvet.text + '</div>';
+                    rezultat = '<div style="color:#fff;">' + otvet.text + '</div>';
                     $("#form_result").hide().html(rezultat).slideDown();
+                    setTimeout(function(){$('#exampleModal').modal('hide')}, 3000);
                 }, 'json');
             }
-        });
+                    
+        }
+        );
         </script>
     </div>
 </body>

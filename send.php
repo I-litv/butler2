@@ -24,7 +24,7 @@ $email = trim($email);
 $subject=trim($subject);
 $message=trim($message);
 
-mail("dovid1989@gmail.com", "Заявка с сайта", "ФИО:".$fname. , .$lname.". E-mail: ".$email ,". Тема:".$subject.". Сообщение:".$message." From: info@svarog.dp.ua \r\n");
+mail("dovid1989@gmail.com", "Заявка с сайта", "ФИО:".$fname. , .$lname.". E-mail: ".$email ,". Тема:".$subject.". Сообщение:".$message." From: info@eximiallc.com \r\n");
 
 ini_set('display_errors','On');
 error_reporting('E_ALL');
